@@ -1,4 +1,36 @@
 import * as React from "react"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import { Seo } from "../components/seo.js"
+
+const IndexPage = () => {
+  //tag template literal
+  const data = useStaticQuery(graphql`
+    query GetSiteTitle{
+      site{
+        siteMetadata{
+          title
+        }
+      }
+      
+    }
+  `)
+  //data?. optional chaining operator - if data is not set, just returns empty
+  const meta = data?.site?.siteMetadata ?? []
+  return (
+    <div>
+      <Seo/>
+      <header>
+        <Link to="/"> {meta.title} </Link>
+      </header>
+      <main>
+        <h1>Inspire</h1>
+        <Link to="/about" > About this site</Link>
+      </main>
+    </div>
+  )
+}
+
+export default IndexPage
 
 // // styles
 // const pageStyles = {
@@ -124,14 +156,3 @@ import * as React from "react"
 //     color: "#663399",
 //   },
 // ]
-
-// markup
-const IndexPage = () => {
-  return (
-    <main>
-      <h1>Inspire</h1>
-    </main>
-  )
-}
-
-export default IndexPage
