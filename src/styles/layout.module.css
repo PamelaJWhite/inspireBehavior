@@ -1,0 +1,41 @@
+/* layout.module.css indicates to Gatsby that I want to use this as a css module */
+/* this is .header b/c we're going to import the class as a module
+and avoid repeats in conflicts in class naming */
+.header {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  /* rem is based on the original/ base font size, which for us is 18 */
+  /* by using rem, everything can be relative to that font size */
+  padding: 1rem;
+}
+
+.header a {
+  /* inherit: text color is whatever color the header is */
+  color: inherit;
+  text-decoration: none;
+  /* set to inline block so we can set padding around links */
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.header a:focus, .header a:hover  {
+  /* because we took off the underline from the links, that causes and accessibility issue */
+  /* to fix the accessibility issue, we change the state when it is hovered or focused */
+  /* ? does focus include any time a screen reader is in the process of reading it? does the screen reader say something different when the css changes on focus? */
+  background: var(--white);
+  color: var(--black);
+}
+
+.content {
+  /* the auto will center it? */
+  margin: 3rem auto;
+  /* adjusts witdth based on line length in characters, not a set size in px or other measure
+  research indicates that it is the number of characters that makes for better legibility (I want this reference; tech videos should require a works cited) */
+  max-width: 54ch;
+  background-color: aqua;
+}
+
+
+

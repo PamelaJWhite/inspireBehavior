@@ -1,32 +1,50 @@
 import * as React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { Seo } from "../components/seo.js"
+
+import Layout from "../components/layout.js"
+
 
 const IndexPage = () => {
-  //tag template literal
+  //use graphql to get all the data to display blogs on front page
   const data = useStaticQuery(graphql`
-    query GetSiteTitle{
-      site{
-        siteMetadata{
+  query GetBlogPosts {
+    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+      nodes {
+        id
+        slug
+        frontmatter {
           title
+          description
+          date
         }
       }
-      
     }
+  }
   `)
-  //data?. optional chaining operator - if data is not set, just returns empty
-  const meta = data?.site?.siteMetadata ?? []
+
+  //save it as a variable
+  const post = data.allMdx.nodes
   return (
-    <div>
-      <Seo/>
-      <header>
-        <Link to="/"> {meta.title} </Link>
-      </header>
-      <main>
-        <h1>Inspire</h1>
-        <Link to="/about" > About this site</Link>
-      </main>
-    </div>
+    //wrap the whole thing in the layout
+    //Layout has the SEO stuff in it
+    <Layout>
+      <h1>Inspire</h1>
+      <Link to="/about" > About this site</Link>
+      <h2>Recent Blog Posts</h2>
+
+      <ul>
+        {/* map over all the posts */}
+        {post.map((post) => (
+          // use the id as a unique key
+          <li key={post.id}>
+            {/* post slug is the actual URL */}
+            <Link to={post.slug}>{post.frontmatter.title}</Link>
+            <small> posted {post.frontmatter.date}</small>
+            </li>
+        )
+        )}
+      </ul>
+    </Layout>
   )
 }
 

@@ -1,0 +1,29 @@
+/* clean-up, set base styles */
+/* holy moly! I can establish my own colors throughout?!? */
+:root {
+  --black: #333;
+  --gray: #555;
+  --white:#fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  /* all text color */
+  color: var(--gray);
+  /* got these from css tricks, system font stack */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* just preferences */
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  margin:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--black);
+}

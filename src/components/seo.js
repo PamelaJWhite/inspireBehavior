@@ -19,14 +19,16 @@ export function Seo(props) {
 
   const title = props.title || defaults.title;
   const description = props.description || defaults.description;
-  const image = props.image || defaults.image;
+  const image = new URL(props.image || defaults.image, defaults.siteUrl)
   const url = new URL(props.path || '/', defaults.siteUrl )
 
   return (
+    //Helmet is like a head  tage, but it's got its own API
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={url}/>
+      {/* this is optional, so we don't put up a broken image (like mine is) */}
       {image && <meta name="image" content={image}/>}
 
       {/* for facebook */}
