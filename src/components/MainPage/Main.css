@@ -1,0 +1,32 @@
+.main-main {
+  border: 1px solid darkcyan;
+  width: 100vw;
+}
+
+.main-section {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beInspired {
+  width: 90vw;
+}
+
+.services-cont{
+  border: 1px solid magenta;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.services-link-cont {
+  border: 1px solid darkorchid;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
