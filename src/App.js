@@ -1,25 +1,18 @@
-import inspireBehaviorLogo from './inspireBehaviorLogo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
+import Router from "./Router.js";
+import Nav from "./components/Nav/Nav.js"
+
+import "./App.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={inspireBehaviorLogo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Nav />
+      <Router />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
