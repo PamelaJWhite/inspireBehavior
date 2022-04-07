@@ -1,10 +1,11 @@
+
 .main-main {
   border: 1px solid darkcyan;
   width: 100vw;
 }
 
 .main-section {
-  margin: 1em;
+  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +13,8 @@
 
 .beInspired {
   width: 90vw;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .services-cont{
@@ -19,6 +22,7 @@
 
   display: flex;
   flex-direction: column;
+  
 }
 
 .services-link-cont {
@@ -27,6 +31,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: var(--margin-outer);
+  margin-bottom:  var(--margin-outer);
+
 }
+
+.services-para {
+  border: 1px solid darkorange;
+  /* this keeps the text limited to 3 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+   /* end keep text limited to 3 lines */
+
+  text-align: center;
+  margin: var(--margin-outer);
+}
+
 
 

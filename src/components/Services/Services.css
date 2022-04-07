@@ -1,0 +1,19 @@
+.main-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-conts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--margin-outer);
+
+}
+
+p {  
+  
+  margin: var(--margin-outer);
+  text-align:justify;
+}
