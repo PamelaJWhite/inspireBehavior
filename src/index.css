@@ -31,7 +31,7 @@ body {
   width: 100vw;
 }
 
-h1, h2, p, a {
+h1, h2, h3, h4, h5, h6, p, a {
   color: var(--color-grey)
 }
 
@@ -39,9 +39,14 @@ a:visited {
   color: var(--color-beinspired)
 }
 
-h2 {
+h2{
   margin-top: .5em;
   margin-bottom: .5em;
+}
+
+h4, h5, h6 {
+  margin-top: .25em;
+  margin-bottom: .25em;
 }
 
 p {
