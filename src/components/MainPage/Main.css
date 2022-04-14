@@ -1,43 +1,74 @@
 
 .main-main {
-  border: 1px solid darkcyan;
-  width: 100vw;
+  /* border: 1px solid darkcyan; */
+  /* width: 100vw; */
 }
 
 .main-section {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-image: linear-gradient(white,#8bd2c46f ); */
+  /* background-image: linear-gradient(white,#0fbddc68); */
+
+} 
+
+.be-inspired-cont {
+background-color: var(--color-calypso);
+width: 100%;
 }
 
+
+
 .beInspired {
-  width: 90vw;
+  /* 85vmin is 85% of the minimum side; either vh or vw */
+  width: 85vmin;
   margin-top: 10%;
   margin-bottom: 5%;
 }
 
+.moreLink {
+  margin-bottom: var(--margin-outer);
+
+}
+
+.services{
+  background-color: var(--color-calypso);
+  color: white;
+
+}
+
+
+
 .services-cont{
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
 
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; 
 }
 
 .services-link-cont {
-  border: 1px solid darkorchid;
+  /* border: 1px solid darkorchid; */
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: var(--margin-outer);
+  margin-top: .5em;
   margin-bottom:  var(--margin-outer);
+  margin-right: var(--margin-outer);
+  margin-left: var(--margin-outer);
+  border-left: 5px solid var(--color-atlantis);
+  text-decoration: none;
+  
+}
 
+.services-link-cont:nth-child(2) {
+  border-left: 5px solid var(--color-atlantis);
 }
 
 .services-para {
-  border: 1px solid darkorange;
+  /* border: 1px solid darkorange; */
   /* this keeps the text limited to 3 lines */
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -47,6 +78,8 @@
 
   text-align: center;
   margin: var(--margin-outer);
+  /* margin-right: 6%;
+  margin-left: 6%; */
 }
 
 

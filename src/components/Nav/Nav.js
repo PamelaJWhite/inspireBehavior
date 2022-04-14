@@ -16,8 +16,9 @@ const Nav = () => {
     }
 
   return (
+    
     <nav className="nav-bar">
-      <img src={logo} class="logo"/>
+      <img src={logo} class="logo"/> 
     
       <label>
         <input type="checkbox"/>
@@ -29,7 +30,13 @@ const Nav = () => {
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#">Our Approach</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
           </li>
           <li>
             <a href="#">Contact</a>
@@ -37,6 +44,7 @@ const Nav = () => {
         </ul>
       </label>
     </nav>
+    
       
   );
 };

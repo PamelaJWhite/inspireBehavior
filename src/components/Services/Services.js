@@ -11,15 +11,15 @@ const Services = () => {
   return (
     <main class="main-main">
       <h1>Services</h1> 
-        <section class="services-conts">
-          <h2>Challenging Behavior</h2>
+        <section class="services-conts" id="cbx">
+          <h2 >Challenging Behavior</h2>
           <Challengingbx />
         </section>
-        <section class="services-conts">
-          <h2>Educational Consultation</h2>
+        <section class="services-conts" id="edCons">
+          <h2 >Educational Consultation</h2>
           <Edconsult />
         </section>
-        <section class="services-conts">
+        <section class="services-conts"id="parentCoach">
           <h2>Parent Coaching</h2>
           <Parentcoach />
         </section>
