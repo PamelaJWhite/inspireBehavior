@@ -5,6 +5,7 @@ import { HashLink } from 'react-router-hash-link'
 import "./Main.css";
 
 import beInspired from "./b-inspire-d.png"
+import wheat from "./wheat-7076817.svg"
 
 const Main = () => {
   return (
@@ -12,7 +13,7 @@ const Main = () => {
 
       <section class="main-section be-inspired-cont">
         <img src={beInspired} alt="be inspired image" class="beInspired" />
-
+        <img src={wheat} alt="wavyBackground" class="wavyBackground" />
       </section>
       <section class="main-section">
       <h1>Our Approach</h1>
