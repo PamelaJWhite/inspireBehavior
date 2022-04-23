@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link'
 import "./Main.css";
 
 import beInspired from "./b-inspire-d.png"
-import wheat from "./wheat-7076817.svg"
+import wheat from "./clippedWheat.png"
 
 const Main = () => {
   return (
@@ -13,7 +13,7 @@ const Main = () => {
 
       <section class="main-section be-inspired-cont">
         <img src={beInspired} alt="be inspired image" class="beInspired" />
-        <img src={wheat} alt="wavyBackground" class="wavyBackground" />
+        <img src={wheat} alt="wavyBackground" class="wavyBackground" /> 
       </section>
       <section class="main-section">
       <h1>Our Approach</h1>
@@ -33,7 +33,7 @@ const Main = () => {
             <HashLink class="moreLink services" to="/services#cbx">More</HashLink>
           </HashLink>
 
-          <HashLink to="/services#edCons" class="services-link-cont services edcon-service-cont"> 
+          <HashLink to="/services#edCons" class="services-link-cont services"> 
             <h2 class="services">Educational Consultation</h2>
             <p class="services-para services">Some text about Ed consult up to three lines or so, I don't know really. My left donut is missing, as is my right push your water glass on the floor kitty loves pigs. Run up and down stairs catch small lizards, bring them into house, then unable to find them on carpet don't nosh on the birds. The door is opening! how exciting oh, it's you, meh warm up laptop with butt lick butt fart rainbows until owner yells pee in litter box hiss at cats tuxedo cats always looking dapper spill litter box, scratch at owner, destroy all furniture, especially couch or go crazy with excitement when plates are clanked together signalling the arrival of cat food paw at beetle and eat it before it gets away.</p>
             <HashLink class="moreLink services" to="/services#edCons">More</HashLink>

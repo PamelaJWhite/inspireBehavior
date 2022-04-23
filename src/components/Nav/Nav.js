@@ -7,42 +7,23 @@ import "./Nav.css";
 //also, can I make a better svg?
 import logo from "./inspireBehaviorLogo.png"
 import hamburger from "./hamburgerIcon.png"
+import MenuWhole from "../Menu/MenuWhole.js"
 
 const Nav = () => {
-  const [ isDrawerOpen, setIsDrawerOpen ] = useState(false);
-  const displayMenu = () => {
-      console.log("clicked burger button")
-      setIsDrawerOpen(!isDrawerOpen)
-    }
 
   return (
     
     <nav className="nav-bar">
-      <img src={logo} class="logo"/> 
+      <div class="logo-cont">
+        <img src={logo} class="logo"/> 
+      </div>
+      <div className="menu-whole-cont">
+        <MenuWhole />
+      </div>
     
-      <label>
-        <input type="checkbox"/>
-        <span class="menu">
-          <span class="hamburger"></span>
-        </span>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Our Approach</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </label>
+      
+      
+      
     </nav>
     
       
@@ -69,3 +50,6 @@ export default Nav;
       }
       </div> 
       </nav> */}
+
+
+   

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/PamelaJWhite/inspireBehavior/static/css/main.c59a65fe.css",
+    "main.js": "/PamelaJWhite/inspireBehavior/static/js/main.3da18a89.js",
+    "static/js/787.be87b281.chunk.js": "/PamelaJWhite/inspireBehavior/static/js/787.be87b281.chunk.js",
+    "static/media/wheat-7076817.svg": "/PamelaJWhite/inspireBehavior/static/media/wheat-7076817.04f8268c014703d9bf26b94c277c4b83.svg",
+    "static/media/inspireBehaviorLogo.png": "/PamelaJWhite/inspireBehavior/static/media/inspireBehaviorLogo.d30934d0a4ffdc5b1901.png",
+    "static/media/b-inspire-d.png": "/PamelaJWhite/inspireBehavior/static/media/b-inspire-d.f33419b3a92b7c07924a.png",
+    "index.html": "/PamelaJWhite/inspireBehavior/index.html",
+    "main.c59a65fe.css.map": "/PamelaJWhite/inspireBehavior/static/css/main.c59a65fe.css.map",
+    "main.3da18a89.js.map": "/PamelaJWhite/inspireBehavior/static/js/main.3da18a89.js.map",
+    "787.be87b281.chunk.js.map": "/PamelaJWhite/inspireBehavior/static/js/787.be87b281.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c59a65fe.css",
+    "static/js/main.3da18a89.js"
+  ]
+}
